@@ -18,6 +18,7 @@ License: A "Slug" license name e.g. GPL2
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ergo Saddle</title>
 	<link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
 <div class="page-container">
@@ -44,16 +45,27 @@ License: A "Slug" license name e.g. GPL2
 				<p>Discover the perfect balance of support and mobility with our innovative saddlechair...</p>
 				<div class="cta-buttons">
 					<a href="#contact" class="btn btn-primary">Get Your Free Trial</a>
-					<a href="#features" class="btn btn-secondary">Learn More</a>
+					<a id="learnMoreBtn" href="#features" class="btn btn-secondary">Learn More</a>
 				</div>
 			</div>
 			<img src="/placeholder.svg" alt="Ergonomic Saddlechair" class="hero-img">
 		</section>
 
+        <!-- Modal -->
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal" id="modal">
+            <div class="modal-header">More Information</div>
+            <div class="modal-body">
+                Here is detailed information about the product. This text can be customized as needed.
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-close" id="closeModalBtn">Close</button>
+            </div>
+        </div>
+
 		<section id="features" class="features">
 			<h2 class="hero-subheader">Features Designed for Your Comfort</h2>
 			<div class="feature-list">
-				<div class="feature-item">
 					<div class="icon-circle"><svg
                                 class="h-6 w-6 text-white"
                                 fill="none"
